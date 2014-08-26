@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8EDEBCC8-77D0-45B3-9CE9-5D44DBB71A4A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SwiftExtension</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7BAC6D1DE5673EB77E67D5E0AC486128AE8D4F03</key>
+		<string>https://github.com/jseanj/SwiftExtension.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SwiftExtension/SwiftExtension.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7BAC6D1DE5673EB77E67D5E0AC486128AE8D4F03</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jseanj/SwiftExtension.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7BAC6D1DE5673EB77E67D5E0AC486128AE8D4F03</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7BAC6D1DE5673EB77E67D5E0AC486128AE8D4F03</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SwiftExtension</string>
+		</dict>
+	</array>
+</dict>
+</plist>
