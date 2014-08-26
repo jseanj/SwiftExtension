@@ -9,6 +9,7 @@
 import Foundation
 
 let array = [1, 2, 3, 4]
+let stringArray = ["a", "b", "c", "a"]
 //let result = array.every {
 //    $0 > 2
 //}
@@ -20,6 +21,8 @@ println("\(resultArray)")
 
 
 println("\([[1, 2, 3], 4].flatten())")
-
+let dic:[String: Int] = stringArray.frequencies()
+println("\(dic)")
+println("\([3, 4, 5].initial())")
 println("Hello, World!")
 

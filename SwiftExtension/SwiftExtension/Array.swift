@@ -58,11 +58,23 @@ public extension Array {
 
 
     // Creates an array excluding all values of the provided arrays
-    func difference<T: Equatable>(array: [T]) -> [Element] {
+    func difference<T: Equatable>(array: [Element]) -> [Element] {
         return self.filter {
             return self.contains($0 as T) && !array.contains($0 as T)
         }
     }
+
+    /*
+        intersection
+        Creates an array of unique values present in all provided arrays
+
+        [1, 2, 3].intersection([5, 2, 1, 4])
+        => [1, 2]
+    */
+    func intersection<T: Equatable>(array: [Element]) -> [Element] {
+        return self.filter { array.contains($0 as T) }
+    }
+
     
     // Flattens a nested array of two depth
     func flatten() -> [Element] {
@@ -80,7 +92,7 @@ public extension Array {
     }
     
     /*
-        ["a", "a", "b", "c", "a", "b"].frequencies
+        ["a", "a", "b", "c", "a", "b"].frequencies()
         => ["a": 3, "b": 2, "c": 1]
     */
     func frequencies<T: Hashable>() -> [T: Int] {
@@ -88,7 +100,7 @@ public extension Array {
         for item in self {
             if let key = item as? T {
                 if let freq = resultDic[key] {
-                    resultDic[key] = freq
+                    resultDic[key] = freq + 1
                 } else {
                     resultDic[key] = 1
                 }
@@ -96,5 +108,22 @@ public extension Array {
         }
         return resultDic
     }
-    
+
+    /*
+        initial
+        Gets all but the last element or last n elements of an array
+
+        [3, 4, 5].initial()
+        => [3, 4]
+        [3, 4, 5].initial(numElements: 2)
+        => [3]
+    */
+    func initial(numElements: Int = 1) -> [Element]{
+        var result = [Element]()
+        for i in 0..<self.count-numElements {
+            result.append(self[i])
+        }
+        return result
+    }
+
 }
